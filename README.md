@@ -12,7 +12,7 @@ hrfee@lab:~/jellyfin-accounts# sudo docker create \
 To build from Dockerfile instead,
 
 ```
-hrfee@lab:~$ wget https://github.com/hrfee/jellyfin-accounts-docker.git
+hrfee@lab:~$ git clone https://github.com/hrfee/jellyfin-accounts-docker.git
 hrfee@lab:~$ cd jellyfin-accounts-docker
 hrfee@lab:~/jellyfin-accounts-docker# sudo docker build -t jellyfin-accounts .
 ```
