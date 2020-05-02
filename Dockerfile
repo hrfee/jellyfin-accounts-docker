@@ -16,4 +16,6 @@ RUN sed -i 's#id="pwrJfPath" placeholder="Folder"#id="pwrJfPath" value="/jf" dis
 
 RUN cd /opt/jellyfin-accounts-master && python3 setup.py install
 
-ENTRYPOINT [ "python3", "/usr/local/bin/jf-accounts", "-d", "/data" ]
+RUN rm -rf /opt/jellyfin-accounts/master
+
+CMD [ "python3", "/usr/local/bin/jf-accounts", "-d", "/data" ]
